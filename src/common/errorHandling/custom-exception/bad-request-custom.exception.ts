@@ -3,7 +3,7 @@ import { BaseCustomException } from './base-custom.exception';
 
 export class BadRequestCustomException extends BaseCustomException {
   statusCode: number = HttpStatus.BAD_REQUEST;
-  protected constructor(message: string) {
+  constructor(message: string) {
     super(message);
   }
 }

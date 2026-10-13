@@ -6,8 +6,9 @@ export const envSchemaValidation = Joi.object({
   NODE_ENV: Joi.string()
     .valid('development', 'production', 'staging', 'test')
     .default('development'),
-  DATABASE_URI: Joi.string().default('mongodb://localhost:27017/nestjs-api'),
-  DATABASE_NAME: Joi.string().default('nestjs-api'),
-  JWT_SECRET: Joi.string().default('secret'),
-  JWT_EXPIRES_IN: Joi.string().default('1h'),
+  FALLBACK_LANGUAGE: Joi.string().required(),
+  MONGODB_URI: Joi.string().required(),
+  JWT_SECRET: Joi.string().required(),
+  ACCESS_TOKEN_EXPIRATION: Joi.string().required().default('1h'),
+  REFRESH_TOKEN_EXPIRATION: Joi.string().required().default('7d'),
 }).unknown(true);

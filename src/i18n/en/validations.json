@@ -1,0 +1,6 @@
+{
+  "isEmail": "email must be a valid email address",
+  "isNotEmpty": "{property} should not be empty",
+  "isString": "{property} must be a string",
+  "isPhoneNumber": "phone number must be a valid Egyptian number"
+}

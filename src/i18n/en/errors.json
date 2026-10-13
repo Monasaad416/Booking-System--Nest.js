@@ -1,0 +1,8 @@
+{
+  "USER_ALREADY_EXISTS": "User already exists",
+  "EMAIL_ALREADY_EXISTS": "Email already exists",
+  "PHONE_NUMBER_ALREADY_EXISTS": "Phone number already exists",
+  "INTERNAL_SERVER_ERROR": "Internal server error",
+  "INVALID_CREDENTIALS": "Invalid credentials",
+  "INVALID_REFRESH_TOKEN": "Invalid refresh token"
+}
