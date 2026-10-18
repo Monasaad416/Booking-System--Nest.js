@@ -2,5 +2,10 @@
   "isEmail": "يجب أن يكون البريد الإلكتروني صالحاً",
   "isNotEmpty": "يجب ألا يكون {property} فارغاً",
   "isString": "يجب أن يكون {property} نصاً",
-  "isPhoneNumber": "يجب أن يكون رقم الهاتف مصرياً صالحاً"
+  "isPhoneNumber": "يجب أن يكون رقم الهاتف مصرياً صالحاً",
+  "isInt": "يجب أن يكون {property} رقماً صحيحاً",
+  "isBoolean": "يجب أن يكون {property} قيمة منطقية",
+  "isArray": "يجب أن يكون {property} مصفوفة",
+  "min": "يجب ألا يقل {property} عن {constraints.0}",
+  "max": "يجب ألا يزيد {property} عن {constraints.0}"
 }

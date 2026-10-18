@@ -2,6 +2,9 @@
   "USER_ALREADY_EXISTS": "المستخدم موجود بالفعل",
   "EMAIL_ALREADY_EXISTS": "البريد الإلكتروني موجود بالفعل",
   "PHONE_NUMBER_ALREADY_EXISTS": "رقم الهاتف موجود بالفعل",
+  "COUNTRY_NAME_ALREADY_EXISTS": "اسم الدولة موجود بالفعل",
+  "COUNTRY_CODE_ALREADY_EXISTS": "رمز الدولة موجود بالفعل",
+  "COUNTRY_NOT_FOUND": "الدولة غير موجودة",
   "INTERNAL_SERVER_ERROR": "خطأ داخلي في الخادم",
   "INVALID_CREDENTIALS": "بيانات الدخول غير صحيحة",
   "INVALID_REFRESH_TOKEN": "رمز التحديث غير صالح"

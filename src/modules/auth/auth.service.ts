@@ -14,14 +14,15 @@ import { LoginUseCase } from './use-cases/login.usecase';
 import { RefreshTokenUseCase } from './use-cases/refresh-token.use.case';
 import { AuthResponseDto } from './dtos/auth-response.dto';
 import { plainToInstance } from 'class-transformer';
+import { ModelNames } from '../../common/dataAccess';
 
 @Injectable()
 export class AuthService {
   constructor(
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,
-    @InjectModel(User.name) private readonly userModel: Model<User>,
-    @InjectModel(RefreshToken.name)
+    @InjectModel(ModelNames.USERS) private readonly userModel: Model<User>,
+    @InjectModel(ModelNames.REFRESH_TOKENS)
     private readonly refreshTokenModel: Model<RefreshToken>,
     private readonly registerUseCase: RegisterUseCase,
     private readonly loginUseCase: LoginUseCase,

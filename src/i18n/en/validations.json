@@ -2,5 +2,10 @@
   "isEmail": "email must be a valid email address",
   "isNotEmpty": "{property} should not be empty",
   "isString": "{property} must be a string",
-  "isPhoneNumber": "phone number must be a valid Egyptian number"
+  "isPhoneNumber": "phone number must be a valid Egyptian number",
+  "isInt": "{property} must be an integer",
+  "isBoolean": "{property} must be a boolean",
+  "isArray": "{property} must be an array",
+  "min": "{property} must be at least {constraints.0}",
+  "max": "{property} must not be greater than {constraints.0}"
 }

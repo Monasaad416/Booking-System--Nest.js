@@ -8,6 +8,7 @@ import { ConfigService } from '@nestjs/config';
 import { RefreshToken } from '../schema/refresh-token.schema';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
+import { ModelNames } from '../../../common/dataAccess';
 
 @Injectable()
 export class RegisterUseCase {
@@ -15,7 +16,7 @@ export class RegisterUseCase {
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,
     private readonly configService: ConfigService,
-    @InjectModel(RefreshToken.name)
+    @InjectModel(ModelNames.REFRESH_TOKENS)
     private readonly refreshTokenModel: Model<RefreshToken>,
   ) {}
 

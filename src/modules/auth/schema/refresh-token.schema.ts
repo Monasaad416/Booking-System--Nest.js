@@ -1,6 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { ModelNames } from '../../../common/dataAccess';
 
-@Schema({ timestamps: true })
+@Schema({ timestamps: true, collection: ModelNames.REFRESH_TOKENS })
 export class RefreshToken {
   @Prop({ required: true })
   userId!: string;

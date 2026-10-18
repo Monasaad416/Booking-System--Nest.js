@@ -17,10 +17,8 @@ export class AuthController {
 
   @Post('register')
   @RegisterSwagger()
-  async register(
-    @Body() registerDto: RegisterDto,
-  ): Promise<{ accessToken: string; refreshToken: string }> {
-    return this.authService.register(registerDto);
+  async register(@Body() registerDto: RegisterDto): Promise<AuthResponseDto> {
+    return await this.authService.register(registerDto);
   }
 
   @Post('login')
@@ -33,7 +31,7 @@ export class AuthController {
   @RefreshTokenSwagger()
   async refreshToken(
     @Body() refreshTokenDto: RefreshTokenDto,
-  ): Promise<{ accessToken: string; refreshToken: string }> {
+  ): Promise<AuthResponseDto> {
     return this.authService.refreshToken(refreshTokenDto);
   }
 }

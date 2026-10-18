@@ -5,6 +5,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { RefreshToken } from '../schema/refresh-token.schema';
 import { Model } from 'mongoose';
 import * as bcrypt from 'bcryptjs';
+import { ModelNames } from '../../../common/dataAccess';
 type TokenType = 'access' | 'refresh';
 
 @Injectable()
@@ -12,7 +13,7 @@ export class GenerateUserTokenUseCase {
   constructor(
     private readonly jwtService: JwtService,
     private readonly configService: ConfigService,
-    @InjectModel(RefreshToken.name)
+    @InjectModel(ModelNames.REFRESH_TOKENS)
     private readonly refreshTokenModel: Model<RefreshToken>,
   ) {}
   async execute(

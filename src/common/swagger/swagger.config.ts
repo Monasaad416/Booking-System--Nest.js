@@ -11,6 +11,8 @@ export class SwaggerConfig {
       .addTag(SwaggerApiTags.AUTH)
       .addTag(SwaggerApiTags.USERS)
       .addTag(SwaggerApiTags.BOOKINGS)
+      .addTag(SwaggerApiTags.COUNTRIES)
+      .addTag(SwaggerApiTags.CITIES)
       .build();
 
     const documentFactory = () => SwaggerModule.createDocument(app, config);

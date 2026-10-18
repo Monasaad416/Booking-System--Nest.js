@@ -8,6 +8,7 @@ import { RefreshTokenDto } from '../dtos/refresh-token.dto';
 import { UnAuthorizedCustomException } from '../../../common/errorHandling/custom-exception/un-authorized-custom.exception';
 import * as bcrypt from 'bcryptjs';
 import { GenerateUserTokenUseCase } from './generate-user-token-usecase';
+import { ModelNames } from '../../../common/dataAccess';
 
 type TokenType = 'access' | 'refresh';
 
@@ -16,7 +17,7 @@ export class RefreshTokenUseCase {
   constructor(
     private readonly jwtService: JwtService,
     private readonly configService: ConfigService,
-    @InjectModel(RefreshToken.name)
+    @InjectModel(ModelNames.REFRESH_TOKENS)
     private readonly refreshTokenModel: Model<RefreshToken>,
   ) {}
 

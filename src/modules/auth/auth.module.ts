@@ -3,23 +3,21 @@ import { ConfigService } from '@nestjs/config';
 import { JwtModule, JwtSignOptions } from '@nestjs/jwt';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from '../users/users.module';
-import { User, UserSchema } from '../users/schema/user.schema';
+import { UserSchema } from '../users/schema/user.schema';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import {
-  RefreshToken,
-  RefreshTokenSchema,
-} from './schema/refresh-token.schema';
+import { RefreshTokenSchema } from './schema/refresh-token.schema';
 import { GenerateUserTokenUseCase } from './use-cases/generate-user-token-usecase';
 import { LoginUseCase } from './use-cases/login.usecase';
 import { RefreshTokenUseCase } from './use-cases/refresh-token.use.case';
 import { RegisterUseCase } from './use-cases/register.usecase';
+import { ModelNames } from '../../common/dataAccess';
 
 @Module({
   imports: [
     MongooseModule.forFeature([
-      { name: User.name, schema: UserSchema },
-      { name: RefreshToken.name, schema: RefreshTokenSchema },
+      { name: ModelNames.USERS, schema: UserSchema },
+      { name: ModelNames.REFRESH_TOKENS, schema: RefreshTokenSchema },
     ]),
     UsersModule,
     JwtModule.registerAsync({

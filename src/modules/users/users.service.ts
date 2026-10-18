@@ -7,11 +7,12 @@ import { BadRequestCustomException } from '../../common/errorHandling/custom-exc
 import { CreateUserDto } from './dtos/create.dto';
 import { UserCreatedResponseDto } from './dtos/user-created-response.dto';
 import { User } from './schema/user.schema';
+import { ModelNames } from '../../common/dataAccess';
 
 @Injectable()
 export class UsersService {
   constructor(
-    @InjectModel(User.name) private readonly userModel: Model<User>,
+    @InjectModel(ModelNames.USERS) private readonly userModel: Model<User>,
   ) {}
 
   async createUser(
