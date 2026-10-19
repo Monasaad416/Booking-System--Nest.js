@@ -9,5 +9,9 @@
   "CITY_NOT_FOUND": "المدينة غير موجودة",
   "INTERNAL_SERVER_ERROR": "خطأ داخلي في الخادم",
   "INVALID_CREDENTIALS": "بيانات الدخول غير صحيحة",
-  "INVALID_REFRESH_TOKEN": "رمز التحديث غير صالح"
+  "INVALID_REFRESH_TOKEN": "رمز التحديث غير صالح",
+  "CURRENCY_NAME_ALREADY_EXISTS": "اسم العملة موجود بالفعل",
+  "CURRENCY_CODE_ALREADY_EXISTS": "رمز العملة موجود بالفعل",
+  "CURRENCY_NOT_FOUND": "العملة غير موجودة",
+  "CURRENCY_ALREADY_ARCHIVED": "العملة موجودة بالفعل في الأرشيف"
 }

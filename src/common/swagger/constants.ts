@@ -4,4 +4,5 @@ export enum SwaggerApiTags {
   BOOKINGS = 'Bookings',
   COUNTRIES = 'Countries',
   CITIES = 'Cities',
+  CURRENCIES = 'Currencies',
 }

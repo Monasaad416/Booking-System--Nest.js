@@ -9,5 +9,9 @@
   "CITY_NOT_FOUND": "City not found",
   "INTERNAL_SERVER_ERROR": "Internal server error",
   "INVALID_CREDENTIALS": "Invalid credentials",
-  "INVALID_REFRESH_TOKEN": "Invalid refresh token"
+  "INVALID_REFRESH_TOKEN": "Invalid refresh token",
+  "CURRENCY_NAME_ALREADY_EXISTS": "Currency name already exists",
+  "CURRENCY_CODE_ALREADY_EXISTS": "Currency code already exists",
+  "CURRENCY_NOT_FOUND": "Currency not found",
+  "CURRENCY_ALREADY_ARCHIVED": "Currency already archived"
 }

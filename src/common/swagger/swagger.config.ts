@@ -13,6 +13,7 @@ export class SwaggerConfig {
       .addTag(SwaggerApiTags.BOOKINGS)
       .addTag(SwaggerApiTags.COUNTRIES)
       .addTag(SwaggerApiTags.CITIES)
+      .addTag(SwaggerApiTags.CURRENCIES)
       .build();
 
     const documentFactory = () => SwaggerModule.createDocument(app, config);
