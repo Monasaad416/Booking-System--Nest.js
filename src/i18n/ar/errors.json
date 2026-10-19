@@ -5,6 +5,8 @@
   "COUNTRY_NAME_ALREADY_EXISTS": "اسم الدولة موجود بالفعل",
   "COUNTRY_CODE_ALREADY_EXISTS": "رمز الدولة موجود بالفعل",
   "COUNTRY_NOT_FOUND": "الدولة غير موجودة",
+  "CITY_NAME_ALREADY_EXISTS": "اسم المدينة موجود بالفعل في هذه الدولة",
+  "CITY_NOT_FOUND": "المدينة غير موجودة",
   "INTERNAL_SERVER_ERROR": "خطأ داخلي في الخادم",
   "INVALID_CREDENTIALS": "بيانات الدخول غير صحيحة",
   "INVALID_REFRESH_TOKEN": "رمز التحديث غير صالح"

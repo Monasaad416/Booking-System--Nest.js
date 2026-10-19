@@ -40,8 +40,8 @@ export function GetCountryByIdSwagger() {
       },
     }),
     ApiOperation({
-      summary: 'Create a new country',
-      description: 'Create a new country',
+      summary: 'Get a country by id',
+      description: 'Get a country by id',
     }),
   );
 }

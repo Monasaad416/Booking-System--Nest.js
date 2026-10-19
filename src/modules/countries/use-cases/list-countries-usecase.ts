@@ -4,7 +4,7 @@ import { CountryRepository } from '../country.repository';
 import { CountryCreatedResponseDto } from '../dtos/country-created-response.dto';
 import { ListCountriesQueryDto } from '../dtos/list-countries-query.dto';
 import { CountryListResponseDto } from '../dtos/list-response.dto';
-import { mapCountryResponse } from './map-country-response';
+import { mapDocumentResponse } from '../../../common/mapping/map-document-response';
 
 @Injectable()
 export class ListCountriesUseCase {
@@ -18,7 +18,7 @@ export class ListCountriesUseCase {
       CountryListResponseDto,
       {
         countries: documents.map((country) =>
-          mapCountryResponse(CountryCreatedResponseDto, country),
+          mapDocumentResponse(CountryCreatedResponseDto, country),
         ),
         page,
         limit,

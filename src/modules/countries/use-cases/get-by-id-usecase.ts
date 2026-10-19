@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { NotFoundCustomException } from '../../../common/errorHandling/custom-exception/not-found-custom.exception';
 import { CountryRepository } from '../country.repository';
 import { CountryCreatedResponseDto } from '../dtos/country-created-response.dto';
-import { mapCountryResponse } from './map-country-response';
+import { mapDocumentResponse } from '../../../common/mapping/map-document-response';
 
 @Injectable()
 export class GetCountryByIdUseCase {
@@ -15,6 +15,6 @@ export class GetCountryByIdUseCase {
       throw new NotFoundCustomException('errors.COUNTRY_NOT_FOUND');
     }
 
-    return mapCountryResponse(CountryCreatedResponseDto, country);
+    return mapDocumentResponse(CountryCreatedResponseDto, country);
   }
 }

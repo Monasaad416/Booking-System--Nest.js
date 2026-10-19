@@ -10,9 +10,9 @@ export function ListCountriesSwagger() {
     }),
     ApiQuery({ name: 'page', required: false, example: 1 }),
     ApiQuery({ name: 'limit', required: false, example: 10 }),
-    ApiQuery({ name: 'name', required: false, example: 'Egypt' }),
-    ApiQuery({ name: 'code', required: false, example: 'EG' }),
-    ApiQuery({ name: 'isDeleted', required: false, example: false }),
+    ApiQuery({ name: 'name', required: false }),
+    ApiQuery({ name: 'code', required: false }),
+    ApiQuery({ name: 'isDeleted', required: false }),
     ApiOperation({
       summary: 'List countries',
       description:

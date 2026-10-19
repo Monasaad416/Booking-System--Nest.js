@@ -40,8 +40,8 @@ export function UpdateCountrySwagger() {
       },
     }),
     ApiOperation({
-      summary: 'Create a new country',
-      description: 'Create a new country',
+      summary: 'Update a country',
+      description: 'Update a country',
     }),
   );
 }

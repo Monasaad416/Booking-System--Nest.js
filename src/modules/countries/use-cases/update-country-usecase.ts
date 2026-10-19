@@ -4,7 +4,7 @@ import { CountryRepository } from '../country.repository';
 import { CountryUpdatedResponseDto } from '../dtos/country-updated-response.dto';
 import { UpdateCountriesDto } from '../dtos/update-country.dto';
 import { AssertCountryUnique } from './assert-country-unique';
-import { mapCountryResponse } from './map-country-response';
+import { mapDocumentResponse } from '../../../common/mapping/map-document-response';
 
 @Injectable()
 export class UpdateCountryUseCase {
@@ -25,6 +25,6 @@ export class UpdateCountryUseCase {
       throw new NotFoundCustomException('errors.COUNTRY_NOT_FOUND');
     }
 
-    return mapCountryResponse(CountryUpdatedResponseDto, country);
+    return mapDocumentResponse(CountryUpdatedResponseDto, country);
   }
 }

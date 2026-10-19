@@ -3,7 +3,7 @@ import { CountryRepository } from '../country.repository';
 import { CountryCreatedResponseDto } from '../dtos/country-created-response.dto';
 import { CreateCountriesDto } from '../dtos/create-country.dto';
 import { AssertCountryUnique } from './assert-country-unique';
-import { mapCountryResponse } from './map-country-response';
+import { mapDocumentResponse } from '../../../common/mapping/map-document-response';
 
 @Injectable()
 export class CreateCountryUseCase {
@@ -17,6 +17,6 @@ export class CreateCountryUseCase {
 
     const createdCountry = await this.countryRepository.create(body);
 
-    return mapCountryResponse(CountryCreatedResponseDto, createdCountry);
+    return mapDocumentResponse(CountryCreatedResponseDto, createdCountry);
   }
 }

@@ -19,17 +19,17 @@ export class ListCountriesQueryDto {
   @IsOptional()
   limit?: number;
 
-  @ApiPropertyOptional({ example: 'Egypt' })
+  @ApiPropertyOptional()
   @IsString({ message: i18nValidationMessage('validations.isString') })
   @IsOptional()
   name?: string;
 
-  @ApiPropertyOptional({ example: 'EG' })
+  @ApiPropertyOptional()
   @IsString({ message: i18nValidationMessage('validations.isString') })
   @IsOptional()
   code?: string;
 
-  @ApiPropertyOptional({ example: false })
+  @ApiPropertyOptional()
   @Transform(({ value }: { value: unknown }) => {
     if (value === 'true' || value === true) return true;
     if (value === 'false' || value === false) return false;
