@@ -7,6 +7,7 @@ import { UsersModule } from './modules/users/users.module';
 import { CountriesModule } from './modules/countries/country.module';
 import { CitiesModule } from './modules/cities/city.module';
 import { CurrenciesModule } from './modules/currencies/currency.module';
+import { UnitCategoriesModule } from './modules/unit-categories/unit-category.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { CurrenciesModule } from './modules/currencies/currency.module';
     CountriesModule,
     CitiesModule,
     CurrenciesModule,
+    UnitCategoriesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

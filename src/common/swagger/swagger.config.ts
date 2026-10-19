@@ -14,6 +14,7 @@ export class SwaggerConfig {
       .addTag(SwaggerApiTags.COUNTRIES)
       .addTag(SwaggerApiTags.CITIES)
       .addTag(SwaggerApiTags.CURRENCIES)
+      .addTag(SwaggerApiTags.UNIT_CATEGORIES)
       .build();
 
     const documentFactory = () => SwaggerModule.createDocument(app, config);

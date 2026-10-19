@@ -5,4 +5,5 @@ export enum SwaggerApiTags {
   COUNTRIES = 'Countries',
   CITIES = 'Cities',
   CURRENCIES = 'Currencies',
+  UNIT_CATEGORIES = 'Unit Categories',
 }
