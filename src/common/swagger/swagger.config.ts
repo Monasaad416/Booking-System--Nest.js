@@ -15,6 +15,11 @@ export class SwaggerConfig {
       .addTag(SwaggerApiTags.CITIES)
       .addTag(SwaggerApiTags.CURRENCIES)
       .addTag(SwaggerApiTags.UNIT_CATEGORIES)
+      .addTag(SwaggerApiTags.GENERAL_SETTINGS)
+      .addTag(SwaggerApiTags.BOOKING_SETTINGS)
+      .addTag(SwaggerApiTags.PAYMENT_SETTINGS)
+      .addTag(SwaggerApiTags.CANCELLATION_SETTINGS)
+      .addTag(SwaggerApiTags.NOTIFICATION_SETTINGS)
       .build();
 
     const documentFactory = () => SwaggerModule.createDocument(app, config);

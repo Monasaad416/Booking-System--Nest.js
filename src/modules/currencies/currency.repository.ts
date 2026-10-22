@@ -60,6 +60,13 @@ export class CurrencyRepository extends BaseRepository<Currency> {
     });
   }
 
+  findActiveByCode(code: string) {
+    return this.findOne({
+      code: code.trim().toUpperCase(),
+      isActive: { $ne: false },
+    });
+  }
+
   findActiveById(id: string) {
     return this.findOne({ _id: id, isDeleted: { $ne: true } });
   }

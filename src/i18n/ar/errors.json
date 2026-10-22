@@ -16,5 +16,15 @@
   "CURRENCY_ALREADY_ARCHIVED": "العملة موجودة بالفعل في الأرشيف",
   "UNIT_CATEGORY_NAME_ALREADY_EXISTS": "اسم فئة الوحدة موجود بالفعل",
   "UNIT_CATEGORY_NOT_FOUND": "فئة الوحدة غير موجودة",
-  "UNIT_CATEGORY_ALREADY_ARCHIVED": "فئة الوحدة موجودة بالفعل في الأرشيف"
+  "UNIT_CATEGORY_ALREADY_ARCHIVED": "فئة الوحدة موجودة بالفعل في الأرشيف",
+  "GENERAL_SETTINGS_NOT_FOUND": "الإعدادات العامة غير موجودة",
+  "GENERAL_SETTINGS_APP_NAME_REQUIRED": "اسم التطبيق مطلوب",
+  "GENERAL_SETTINGS_CURRENCY_REQUIRED": "العملة الافتراضية مطلوبة",
+  "DEFAULT_LANGUAGE_NOT_SUPPORTED": "يجب أن تكون اللغة الافتراضية ضمن اللغات المدعومة",
+  "BOOKING_SETTINGS_NOT_FOUND": "إعدادات الحجز غير موجودة",
+  "BOOKING_NIGHTS_RANGE_INVALID": "لا يمكن أن يزيد الحد الأدنى لليالي الحجز عن الحد الأقصى",
+  "PAYMENT_SETTINGS_NOT_FOUND": "إعدادات الدفع غير موجودة",
+  "PAYMENT_ORDER_AMOUNT_RANGE_INVALID": "لا يمكن أن يزيد الحد الأدنى لمبلغ الطلب عن الحد الأقصى",
+  "CANCELLATION_SETTINGS_NOT_FOUND": "إعدادات الإلغاء غير موجودة",
+  "NOTIFICATION_SETTINGS_NOT_FOUND": "إعدادات الإشعارات غير موجودة"
 }

@@ -4,6 +4,7 @@
   "isString": "يجب أن يكون {property} نصاً",
   "isPhoneNumber": "يجب أن يكون رقم الهاتف مصرياً صالحاً",
   "isInt": "يجب أن يكون {property} رقماً صحيحاً",
+  "isNumber": "يجب أن يكون {property} رقماً",
   "isBoolean": "يجب أن يكون {property} قيمة منطقية",
   "isArray": "يجب أن يكون {property} مصفوفة",
   "min": "يجب ألا يقل {property} عن {constraints.0}",

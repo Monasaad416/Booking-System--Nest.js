@@ -32,6 +32,6 @@ import { UpdateCurrencyUseCase } from './use-cases/update-currency-usecase';
     UpdateCurrencyUseCase,
     AssertCurrencyUnique,
   ],
-  exports: [CurrencyService],
+  exports: [CurrencyService, CurrencyRepository],
 })
 export class CurrenciesModule {}
